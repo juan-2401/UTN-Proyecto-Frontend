@@ -106,6 +106,7 @@ a img{
 @media (max-width: 767px) {
     a img{
         height: auto;
+        max-width: 360px;
         width: 90%;
     }
 }
