@@ -84,6 +84,8 @@ p{
 
 hr{
     margin: 40px 0;
+    color: rgba(0, 0, 0, 0.333);
+    opacity: unset;
 }
 
 .contenedor{
