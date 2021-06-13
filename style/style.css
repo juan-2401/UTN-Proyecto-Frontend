@@ -8,7 +8,7 @@ body{
 header{
     position: fixed;
     top: 0;
-    background-color: grey;
+    background-color: hsl(0, 0%, 60%);
     width: 100%;
     border-bottom: 2px;
     border-bottom-style: solid;
@@ -93,6 +93,10 @@ hr{
     gap: 25px;
 }
 
+.contenedor a{
+    color: #131E3A
+}
+
 a img{
     height: auto;
     width: 360px;
@@ -115,12 +119,9 @@ footer{
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
-    position: fixed;
-    bottom: 0;
-    background-color: grey;
+    background-color: hsl(0, 0%, 60%);
     width: 100%;
     padding: 10px;
-    margin-top: 20px;
     border-top: 2px;
     border-top-style: solid;
     border-color: white;
@@ -168,7 +169,7 @@ form{
     align-items: center;
     justify-content: center;
     width: 600px;
-    background-color: lightgrey;
+    background-color: hsl(0, 0%, 83%);
     border: 2px;
     border-style: solid;
     border-radius: 10px;
