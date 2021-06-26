@@ -16,58 +16,60 @@
 
 <body>
     
-<header>
+    <header>
 
-    <nav id="navbar">
-        <a href="index.html" rel="noopener noreferrer">Inicio</a>
-        <a href="mascotas.html" rel="noopener noreferrer">Mascotas</a>                
-        <a href="adoptar.html" rel="noopener noreferrer">Adoptar</a>
-        <a href="dar-en-adopcion.html" rel="noopener noreferrer">Dar en adopción</a>
-        <a href="contacto.html" rel="noopener noreferrer">Contacto</a>
-    </nav>
+        <nav id="navbar">
+            <a href="index.html" rel="noopener noreferrer">Inicio</a>
+            <a href="mascotas.html" rel="noopener noreferrer">Mascotas</a>                
+            <a href="adoptar.html" rel="noopener noreferrer">Adoptar</a>
+            <a href="dar-en-adopcion.html" rel="noopener noreferrer">Dar en adopción</a>
+            <a href="contacto.html" rel="noopener noreferrer">Contacto</a>
+        </nav>
 
-</header>
+    </header>
 
-<main>
+    <main>
 
-    <h1>Contacto</h1>
+        <h1>Contacto</h1>
 
-    <p>¿Consultas o sugerencias?
-        <br>
-        ¡Escribinos!
-    </h6>
+        <p>¿Consultas o sugerencias?
+            <br>
+            ¡Escribinos!
+        </h6>
 
-    <hr>
+        <hr>
 
-    <div class="contenedor">   
+        <div class="contenedor">   
 
-        <form class="formulario" id="form-contacto" action="POST" data-netlify="true">
+            <form class="formulario" id="form-contacto" action="POST" data-netlify="true">
 
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" minlength="3" maxlength="40" required>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" minlength="3" maxlength="40" required>
+                
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="number" name="telefono" placeholder="5491101234567" minlength="8" maxlength="13" required>
+                
+                <label for="email">Correo Electrónico</label>
+                <input id="email" type="email" name="email" placeholder="example@example.com" maxlength="40" required>
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" maxlength="200" required></textarea><br><br>
+                
+                <input id="submit" class="btn btn-primary" type="submit" value="Enviar">
             
-            <label for="telefono">Telefono</label>
-            <input id="telefono" type="number" name="telefono" placeholder="5491101234567" minlength="8" maxlength="13" required>
+            </form>
             
-            <label for="email">Correo Electrónico</label>
-            <input id="email" type="email" name="email" placeholder="example@example.com" maxlength="40" required>
-            
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" maxlength="200" required></textarea><br><br>
-            
-            <input id="submit" class="btn btn-primary" type="submit" value="Enviar">
-        
-        </form>
-        
-    </div>
+        </div>
 
-</main>
+    </main>
 
-<footer>
+    <footer>
 
-    <a class="registred" href="https://juan-pablo-ferreira.netlify.app/" target="_blank" rel="noopener noreferrer">® Juan Pablo Ferreira (2021)</a>
+        <a id="registred" href="https://juan-pablo-ferreira.netlify.app/" target="_blank" rel="noopener noreferrer"></a>
 
-</footer>
+    </footer>
+
+    <script src="script/script.js"></script>
 
 </body>
 

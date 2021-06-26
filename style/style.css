@@ -1,14 +1,23 @@
+/* Variables de colores */
+
+:root {
+    --header-bg-color: hsl(0, 0%, 60%);
+    --main-bg-color: lightsteelblue;
+    --footer-bg-color: hsl(0, 0%, 60%);
+  }
+
+
 /* Style aplicado a todo el sitio */
 
 body{
     text-align: center;
-    background-color: lightsteelblue;
+    background-color: var(--main-bg-color);
 }
 
 header{
     position: fixed;
     top: 0;
-    background-color: hsl(0, 0%, 60%);
+    background-color: var(--header-bg-color);
     width: 100%;
     border-bottom: 2px;
     border-bottom-style: solid;
@@ -94,7 +103,7 @@ hr{
 }
 
 .contenedor a{
-    color: #131E3A
+    color: #131E3A;
 }
 
 a img{
@@ -119,7 +128,7 @@ footer{
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
-    background-color: hsl(0, 0%, 60%);
+    background-color: var(--footer-bg-color);
     width: 100%;
     padding: 10px;
     border-top: 2px;
