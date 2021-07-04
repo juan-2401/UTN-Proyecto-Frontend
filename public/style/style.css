@@ -1,0 +1,236 @@
+/* Variables de colores */
+
+:root {
+    --header-bg-color: hsl(0, 0%, 60%);
+    --main-bg-color: lightsteelblue;
+    --footer-bg-color: hsl(0, 0%, 60%);
+}
+
+
+/* Style aplicado a todo el sitio */
+
+body{
+    text-align: center;
+    background-color: var(--main-bg-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: var(--header-bg-color);
+    width: 100%;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-color: white;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+    #navbar{
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+#navbar a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    #navbar a{
+        font-size: 16px;
+    }
+}
+
+main{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    main{
+        margin-top: 120px;
+    }
+}
+
+h1{
+    font-weight: bold;
+    margin: 40px 0;
+    text-decoration: underline;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+p{
+    margin: 40px 10% 40px 10%;
+    font-size: 16px;
+}
+
+hr{
+    margin: 40px 0;
+    color: rgba(0, 0, 0, 0.333);
+    opacity: unset;
+}
+
+.contenedor{
+    margin: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.contenedor a{
+    color: #131E3A;
+}
+
+a img{
+    height: auto;
+    width: 360px;
+    margin: 1px;
+    border-radius: 5%;
+    border-style: solid;
+}
+
+@media (max-width: 767px) {
+    a img{
+        height: auto;
+        max-width: 360px;
+        width: 90%;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    background-color: var(--footer-bg-color);
+    width: 100%;
+    padding: 10px;
+    border-top: 2px;
+    border-top-style: solid;
+    border-color: white;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+/* Style aplicado solo a la pagina de "mascotas" */
+
+.cara-mascotas{
+    height: 46px;
+    width: auto;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+#video{
+	width: 55vw;
+	height: 31vw;
+	margin: 5px 10% 0 10%;
+}
+
+@media (max-width: 767px) {
+	#video{
+		width: 90vw;
+		height: 51vw;
+		margin-left: auto;
+        margin-right: auto;
+		}
+}
+
+/* Style aplicado a los formularios */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    background-color: hsl(0, 0%, 83%);
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+form label{
+    margin: 10px 0 5px 0;
+}
+
+form input{
+    width: 90%;
+}
+
+#mensaje{
+    width: 90%;
+	height: 20vh;
+	align-content: unset;
+}
+
+#submit{
+    width: 45%;
+    margin: 10px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contenedor-en-contenedor{
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Style aplicado solo a la pagina de "adoptar" */
+
+#requisitos{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+li{
+    margin: 5px 0;
+}
+
+/* Juan Pablo Ferreira / juan-2401@hotmail.com */

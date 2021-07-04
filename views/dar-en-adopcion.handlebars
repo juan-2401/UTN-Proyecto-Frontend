@@ -1,0 +1,53 @@
+    {{> header}}
+
+    <main>
+
+        <h1>Dar en adopción</h1>
+
+        <p>¿Tenes una mascota que esta buscando un hogar?
+            <br>
+            Completa el siguiente formulario y nos pondremos en contacto con vos para ayudarte.
+        </h6>
+
+        <hr>
+
+        <div class="contenedor"> 
+
+            <form class="formulario" id="form-dar-en-adopcion" method="POST" action="/enviar-dar-en-adopcion">
+
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" minlength="3" maxlength="40" required>
+
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="number" name="telefono" placeholder="5491101234567" minlength="8" maxlength="13" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input id="email" type="email" name="email" placeholder="example@example.com" maxlength="40" required>
+
+                <label for="zona">Zona</label>
+                <input id="zona" type="text" name="zona" placeholder="Provincia / Partido / Barrio" minlength="10" maxlength="50" required>
+
+                <label for="animales">Animal</label>
+                <div class="contenedor-en-contenedor">
+                <label for="gato">Gato<input id="gato" type="radio" name="animales" value="gato" checked></label>
+                <label for="perro">Perro<input id="perro" type="radio" name="animales" value="perro"></label>
+                </div>
+
+                <label>Edad</label>
+                <div class="contenedor-en-contenedor">
+                <label for="años">Años<input id="años" type="number" name="años" placeholder="AA" min="0" max="35" required></label>
+                <label for="meses">Meses<input id="meses" type="number" name="meses" placeholder="MM" min="0" max="11" required></label>
+                </div>
+
+                <label for="mensaje">Comentarios</label>
+                <textarea id="mensaje" name="mensaje" maxlength="200" required></textarea><br><br>
+
+                <input id="submit" class="btn btn-primary" type="submit" value="Enviar">
+
+            </form>
+
+        </div>
+
+    </main>
+
+    {{> footer}}
