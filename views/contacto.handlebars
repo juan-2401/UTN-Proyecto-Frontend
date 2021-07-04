@@ -1,0 +1,38 @@
+    {{> header}}
+
+    <main>
+
+        <h1>Contacto</h1>
+
+        <p>¿Consultas o sugerencias?
+            <br>
+            ¡Escribinos!
+        </h6>
+
+        <hr>
+
+        <div class="contenedor">   
+
+            <form class="formulario" id="form-contacto" method="POST" action="/enviar-contacto">
+
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" minlength="3" maxlength="40" required>
+                
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="number" name="telefono" placeholder="5491101234567" minlength="8" maxlength="13" required>
+                
+                <label for="email">Correo Electrónico</label>
+                <input id="email" type="email" name="email" placeholder="example@example.com" maxlength="40" required>
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" maxlength="200" required></textarea><br><br>
+                
+                <input id="submit" class="btn btn-primary" type="submit" value="Enviar">
+            
+            </form>
+            
+        </div>
+
+    </main>
+
+    {{> footer}}
