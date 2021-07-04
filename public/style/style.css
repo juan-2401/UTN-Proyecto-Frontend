@@ -233,4 +233,17 @@ li{
     margin: 5px 0;
 }
 
+#mascotas-en-adopcion{
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+	#mascotas-en-adopcion{
+        width: 98%;
+		}
+}
+
 /* Juan Pablo Ferreira / juan-2401@hotmail.com */

@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 const exphbs = require('express-handlebars');
+var helpers = require('handlebars-helpers')();
 const sgMail = require('@sendgrid/mail'); /* Sendgrid  */
 const bodyParser = require('body-parser'); /* Sendgrid  */
 
