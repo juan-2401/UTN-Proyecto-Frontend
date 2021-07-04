@@ -10,16 +10,6 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({ extended: true }));
 
-/* DB MySQL Workbench */
-
-var mysql = require('mysql2');
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'webpage2401',
-    database: 'adopcion'
-});
-
 /* Paginas del Sitio */
 
     app.use(express.static('public'));
