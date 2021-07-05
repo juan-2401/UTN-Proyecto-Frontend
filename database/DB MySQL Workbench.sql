@@ -49,7 +49,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `Adopcion`.`Mascotas` (
   `idMascota` INT NOT NULL AUTO_INCREMENT,
   `nombreMascota` VARCHAR(45) NOT NULL,
-  `estadoMascota` VARCHAR(11) NOT NULL,
+  `estadoMascota` VARCHAR(16) NOT NULL,
   `animalMascota` VARCHAR(5) NOT NULL,
   `nacimientoMascota` DATE NOT NULL,
   `sexoMascota` VARCHAR(1) NOT NULL,
@@ -83,7 +83,7 @@ DEFAULT CHARACTER SET = utf8mb3;
 CREATE TABLE IF NOT EXISTS `adopcion`.`mascotas` (
   `idMascota` INT NOT NULL AUTO_INCREMENT,
   `nombreMascota` VARCHAR(45) NOT NULL,
-  `estadoMascota` VARCHAR(11) NOT NULL,
+  `estadoMascota` VARCHAR(16) NOT NULL,
   `animalMascota` VARCHAR(5) NOT NULL,
   `nacimientoMascota` DATE NOT NULL,
   `sexoMascota` VARCHAR(1) NOT NULL,

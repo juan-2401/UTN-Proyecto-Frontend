@@ -7,7 +7,7 @@
         <p>¿Queres adoptar un gato o un perro?
             <br>
             Primero te contamos los requisitos y despues podras ver los animales que estan esperando un hogar.
-        </h6>
+        </p>
 
         <hr>
 
@@ -35,21 +35,53 @@
         <section id="mascotas-en-adopcion">
 
             <table class="table table-bordered">
-            <tr>
-                <th class="table-dark">Nombre</th>
-                <th class="table-dark">Animal</th>
-                <th class="table-dark">Sexo</th>
-                <th class="table-dark">Nacimiento</th>
-            </tr>
-            {{#each items }}
                 <tr>
-                <td class="table-light">{{this.nombreMascota}}</td>
-                <td class="table-light">{{this.animalMascota}}</td>
-                <td class="table-light">{{this.sexoMascota}}</td>
-                <td class="table-light">{{moment this.nacimientoMascota format="DD-MM-YYYY"}}</td>
-            </tr>
-            {{/each}}
-        </table>
+                    <th class="table-dark">Nombre</th>
+                    <th class="table-dark">Animal</th>
+                    <th class="table-dark">Sexo</th>
+                    <th class="table-dark">Nacimiento</th>
+                </tr>
+                {{#each items}}
+                    <tr>
+                        <td class="table-light">{{this.nombreMascota}}</td>
+                        <td class="table-light">{{this.animalMascota}}</td>
+                        <td class="table-light">{{this.sexoMascota}}</td>
+                        <td class="table-light">{{moment this.nacimientoMascota format="DD-MM-YYYY"}} </td>
+                    </tr>
+                {{/each}}
+            </table>
+
+            <p><strong>
+                Completa el siguiente formulario con la mascota que queres adoptar y en breve te estaremos contactando.
+            </strong></p>
+
+            <div class="contenedor">
+
+                <form class="formulario" id="form-adoptar" method="POST" action="/enviar-adoptar">
+
+                    <label for="adoptado">Mascota a Adoptar</label>
+                        <select class="form-select" id="adoptado" name="adoptado" required>
+                            {{#each items}}
+                                <option value={{this.nombreMascota}}>{{this.nombreMascota}}</option>
+                            {{/each}}
+                        </select>
+                    
+
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" minlength="3" maxlength="40" required>
+
+                    <label for="telefono">Telefono</label>
+                    <input id="telefono" type="number" name="telefono" placeholder="5491101234567" minlength="8" maxlength="13" required>
+
+                    <label for="email">Correo Electrónico</label>
+                    <input id="email" type="email" name="email" placeholder="example@example.com" maxlength="40" required>
+
+                    <input id="submit" class="btn btn-primary" type="submit" value="Enviar">
+
+                </form>
+
+            </div>
+
         </section>
 
     </main>
