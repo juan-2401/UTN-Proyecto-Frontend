@@ -12,6 +12,7 @@
 body{
     text-align: center;
     background-color: var(--main-bg-color);
+    min-height: 100%;
 }
 
 header{
