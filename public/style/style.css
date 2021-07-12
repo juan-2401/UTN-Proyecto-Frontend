@@ -12,7 +12,6 @@
 body{
     text-align: center;
     background-color: var(--main-bg-color);
-    min-height: 100%;
 }
 
 header{
@@ -105,6 +104,7 @@ hr{
 
 .contenedor a{
     color: #131E3A;
+    flex-basis: 33.333333%;
 }
 
 a img{
